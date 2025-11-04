@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Witaj w aplikacji</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Webowy</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <h1> Witaj w aplikacji!</h1>
-    <p>Kliknij przycisk, aby zobaczyć akcję:</p>
-    <button id="actionBtn">Kliknij mnie</button>
-    <div id="result"></div>
+  <div class="container">
+    <h1> Kalkulator Webowy</h1>
+    <input id="num1" type="number" placeholder="Liczba 1" />
+    <input id="num2" type="number" placeholder="Liczba 2" />
+
+    <div class="buttons">
+      <button onclick="calculate('+')"> Dodaj</button>
+      <button onclick="calculate('-')"> Odejmij</button>
+      <button onclick="calculate('*')"> Pomnóż</button>
+      <button onclick="calculate('/')"> Podziel</button>
+    </div>
+
+    <h2 id="result">Wynik: ...</h2>
   </div>
 
   <script src="script.js"></script>
